@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- hier zet je de code in de head tags -->
+    <title> contact </title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<nav class="navigation-bar">
+    <li><a li href="index.html">home</a></li>
+</nav>
+
+<!-- zo had ik het eerst gedaan:
+<form name="contact" method="POST" data-netlify="true">
+    <input type="text" name="name" value="name" />
+    <input type="email" name="email" value="email" />
+    <textarea name="comment" rows="10" cols="30"> type here </textarea>
+    <input type="submit" value="submit" />
+</form> 
+-->
+<form name="contact" method="POST" data-netlify="true">
+    <p>
+        <label>Naam: <input type="text" name="name" /></label>
+    </p>
+    <p>
+        <label>Email: <input type="email" name="email" /></label>
+    </p>
+    <p>
+        <label>Telefoonnummer: <input type="tel" name="phone" /></label>
+    </p>
+    <p>
+        <label>Leeftijd: <input type="text" name="age" min="1" max="99" /></label>
+        <label>Geboortedatum: <input type="date" name="date" /></label>
+    </p>
+
+    <p>
+        Gender: <br>
+        <label>Man: <input type="radio" id="male" name="gender" value="male" /></label>
+        <label>Vrouw: <input type="radio" id="female" name="gender" value="female" /></label>
+        <label>Anders: <input type="radio" id="other" name="gender" value="other" /></label>
+    </p>
+
+    <!--  <p>
+        Gender: <br>
+        <label>Vrouw: <input type="radio" id="female" name="gender" /></label>
+        <label>Man: <input type="radio" id="male" name="gender" /></label>
+        <label>Anders: <input type="radio" id="other" name="gender" /></label>
+    </p>
+-->
+
+    <p>
+        Favoriete cuisine: <br>
+        <label>Frans: <input type="checkbox" name="Frans" /></label>
+        <label>Italiaans: <input type="checkbox" name="Italiaans" /></label>
+        <label>Spaans: <input type="checkbox" name="Spaans" /></label>
+        <label>Arabisch: <input type="checkbox" name="Arabisch" /></label>
+    </p>
+    <p>
+        <label>Kleur schort: <input type="color" name="color" /></label>
+    </p>
+    <p>
+        <label>Biografie: <textarea name="message"></textarea></label>
+    </p>
+    <p>
+        <label>Upload je laatste recept: <input type="file" name="recipe" /></label>
+    </p>
+    <p>
+        <label>Website: <input type="url" name="website" /></label>
+    </p>
+    <p>
+        <button type="reset">Wissen</button>
+        <button type="submit">Versturen</button>
+    </p>
+</form>
+
+</html>
